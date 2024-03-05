@@ -1,0 +1,65 @@
+body {
+  background-color: #CB0B19;
+  color: #FDB3B8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form > * {
+  margin: 20px;
+}
+
+#boton-generar {
+  width: 50%;
+  height: 50px;
+  background-color: #FC9951;
+  border-radius: 10px;
+}
+
+fieldset {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #A3096A;
+  color: #EBA6D1;
+}
+
+fieldset > * {
+  margin: 5px;
+}
+
+
+
+.casilla {
+  width: 10px;
+  height: 10px;
+  background-color: aqua;
+  border: rgba(0, 0, 0, 0) 1px solid;
+  font-size: x-small;
+}
+
+#mapa {
+  display: flex;
+  flex-wrap: wrap;
+  border: 5px black solid;
+  color: black;
+  margin: 20px;
+}
+
+.naturaleza {
+  background-color: greenyellow;
+}
+
+.urbanizacion {
+  background-color: grey;
+}
+
+.comercial {
+  background-color: darkred;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>GENERADOR DE MAPAS ALEATORIOS</h1>
+  <form action="" id="parametros" name="parametros">
+    <h2>Parámetros de generación de zonas: </h2>
+    <fieldset>
+      <legend>General</legend>
+      <label for="map-size">Tamaño del mapa: </label>
+      <input type="number" name="map-size" id="map-size" value="64">
+      <br>
+      <label for="max-ocupado">Área máxima ocupada: </label>
+      <input type="range" name="max-ocupado" id="max-ocupado" max="100" min="1" step="1" value="80">
+      <br>
+
+    </fieldset>
+    <fieldset>
+      <legend>Naturaleza</legend>
+      <label for="min-zonas-naturaleza">Minimo de zonas: </label>
+      <input type="number" name="min-zonas-naturaleza" id="min-zonas-naturaleza" value="2">
+      <br>
+      <label for="max-zonas-naturaleza">Máximo de zonas: </label>
+      <input type="number" name="max-zonas-naturaleza" id="max-zonas-naturaleza" value="8">
+      <br>
+      <label for="max-size-zone-naturaleza">Longitud máxima de zonas: </label>
+      <input type="number" name="max-size-zone-naturaleza" id="max-size-zone-naturaleza" value="500">
+      <br>
+      <label for="max-size-total-naturaleza">Maximo de cuadrados de el tipo: </label>
+      <input type="number" name="max-size-total-naturaleza" id="max-size-total-naturaleza" value="800">
+
+    </fieldset>
+    <fieldset>
+      <legend>Urbanización</legend>
+      <label for="min-zonas-urbanizacion">Minimo de zonas: </label>
+      <input type="number" name="min-zonas-urbanizacion" id="min-zonas-urbanizacion" value="4">
+      <br>
+      <label for="max-zonas-urbanizacion">Máximo de zonas: </label>
+      <input type="number" name="max-zonas-urbanizacion" id="max-zonas-urbanizacion" value="6">
+      <br>
+      <label for="max-size-zone-urbanizacion">Longitud máxima de zonas: </label>
+      <input type="number" name="max-size-zone-urbanizacion" id="max-size-zone-urbanizacion" value="100">
+      <br>
+      <label for="max-size-total-urbanizacion">Maximo de cuadrados de el tipo: </label>
+      <input type="number" name="max-size-total-urbanizacion" id="max-size-total-urbanizacion" value="800">
+      <br>
+
+    </fieldset>
+    <fieldset>
+      <legend>Comercial</legend>
+      <label for="min-zonas-comercial">Minimo de zonas: </label>
+      <input type="number" name="min-zonas-comercial" id="min-zonas-comercial" value="2">
+      <br>
+      <label for="max-zonas-comercial">Máximo de zonas: </label>
+      <input type="number" name="max-zonas-comercial" id="max-zonas-comercial" value="8">
+      <br>
+      <label for="max-size-zone-comercial">Longitud máxima de zonas: </label>
+      <input type="number" name="max-size-zone-comercial" id="max-size-zone-comercial" value="50">
+      <br>
+      <label for="max-size-total-comercial">Maximo de cuadrados de el tipo: </label>
+      <input type="number" name="max-size-total-comercial" id="max-size-total-comercial" value="200">
+      <br>
+
+    </fieldset>
+    <button id="boton-generar">Generar mundo</button>
+  </form>
+  <div id="mapa" id="mapa"></div>
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
